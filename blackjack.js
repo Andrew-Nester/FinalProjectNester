@@ -94,7 +94,7 @@ while(true){
     makevalue(dealerHand[1])
     dealerValue = dealerValue + cardValue
     updatescreen()
-    let hit = prompt("hit or stand")
+    let hit = prompt("type hit to add a card, anything else will make you stop")
     hit = hit.toLowerCase()
     let playerdrawn = 2
     let dealerdrawn = 2
@@ -154,12 +154,12 @@ while(true){
             playerScore = playerScore + 1
         }
         updatescreen()
-        if (playerScore == 5){
-            alert("you win")
-            break
-        }
         if (dealerScore == 5){
             alert("you suck at luck")
+            break
+        }
+        if (playerScore == 5){
+            alert("you win")
             break
         }
     }
